@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋游戏</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="operate-part">
+        <button onclick="util.init()">开始/重置</button>
+        <button onclick="util.resetStep()">悔棋</button>
+        <button onclick="util.recoverReset()">取消悔棋</button>
+        <button id="isMachine"  onclick="util.toggleMode()">人机对战</button>
+    </div>
+    <div id="playContainer" class="play-container"></div>
+    <div id="chessContainer" class="chess-container"></div>
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
